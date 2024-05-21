@@ -1,5 +1,7 @@
 @extends('layout.layout')
 
+@yield('title.home')
+
 @section('content')
 <div class="container">
     <div class="d-flex flex-column">

@@ -17,9 +17,9 @@ Route::get('/', function(){
     return view('layout.layout');
 })->name('mainPage');
 Route::get('/home', function () {
-    return view('Partials.home');
+    return view('home');
 })->name('home');
 
 Route::get('/comics', function(){
-    return view('Partials.comics');
+    return view('comics');
 })->name('comics');
