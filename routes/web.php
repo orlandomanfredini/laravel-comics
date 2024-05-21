@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', function(){
     return view('layout.layout');
-});
+})->name('mainPage');
 Route::get('/home', function () {
     return view('Partials.home');
 })->name('home');
