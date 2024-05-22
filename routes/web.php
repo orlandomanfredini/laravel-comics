@@ -16,16 +16,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function(){
     return view('mainHome');
 })->name('mainPage');
+
 Route::get('/home', function () {
     return view('home');
 })->name('home');
 
 Route::get('/comics', function(){
-    return view('comics');
+    $data = config('comics');
+    return view('comics', compact('data'));
 })->name('comics');
+
 Route::get('/contact', function(){
     return view('contact');
 })->name('contact');
+
 Route::get('/privacy', function(){
     return view('privacy');
 })->name('privacy');
